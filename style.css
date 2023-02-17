@@ -38,21 +38,27 @@ body, html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.els{
+.els ul{
     margin-top: 20px;
-  float:left;
+    float:left;
+    list-style: none;
 }
 
-.els a {
-    color: rgb(0, 0, 0);
+.els ul li{
+    float: left;
+}
+
+.els ul li  a{
     text-decoration: none;
+    color: black;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-right: 30px;
+    padding-right: 10px;
     padding-left: 30px;
+    transition: all 0.3s;
 }
 
-.els a:hover{
+.els ul li a:hover{
     color: red;
 }
 
@@ -236,17 +242,25 @@ body, html {
  float: left;
 }
 .menu{
-    overflow: scroll;
+    overflow-y: scroll;
     height: 500px;
 }
 
-.menu a{
+.menu ul{
+    list-style: none;
     font-size: 60px;
     background-color: white;
-    border-radius: 20px;
+}
+
+.menu ul li a{
     text-decoration: none;
     color: black;
+    border-radius: 20px;
 }
+.menu a {
+    transition: all 0.3s;
+}
+
 .menu a:hover{
     background-color: red;
     color: white;
@@ -257,6 +271,7 @@ body, html {
 }
 
 .hamburger{
+    border-radius: 20px;
     margin-top: 50px;
     float: left;
     margin-left: 40vh;
@@ -264,6 +279,7 @@ body, html {
 }
 
 .pizza{
+    border-radius: 20px;
     margin-left: 20px;
     margin-top: 50px;
     float: left;
@@ -375,9 +391,6 @@ body, html {
     float: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.pars{
-    color: grey;
-}
 
 .textareaofemail{
     border-radius: 20px;
@@ -387,4 +400,14 @@ body, html {
 .sendmail{
     width: 30px;
     margin-bottom: 10px;
+}
+
+.pars a{
+    text-decoration: none;
+    color: grey;
+    transition: all 0.4s;
+}
+
+.pars a:hover{
+    color: rgb(88, 88, 88);
 }
